@@ -1,4 +1,6 @@
 import React from "react";
+import "./ResultRow.css";
+
 import {Col, Container, Form, Row} from "react-bootstrap";
 
 
