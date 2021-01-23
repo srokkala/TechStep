@@ -25,10 +25,10 @@ export const Result = (props) =>{
                                     </Row>
                                     <Row>
                                         <Col xs = {6} md = {4}>
-                                            <div className="SmallBoxes">{props.user.age} </div>
+                                            <div>{props.user.age} </div>
                                         </Col>
                                         <Col xs = {1} md = {2}>
-                                            <div className="SmallBoxes"> {props.user.location}</div>
+                                            <div> {props.user.location}</div>
                                         </Col>
                                     </Row>
                                 </Container>
