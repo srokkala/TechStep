@@ -1,0 +1,8 @@
+.ResultBox {
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 10px;
+    border-top-width: 0;
+    max-width: 100vw;
+    /* UI Properties */
+    opacity: 1;
+}
