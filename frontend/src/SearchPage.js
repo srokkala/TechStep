@@ -18,8 +18,8 @@ class SearchPage extends Component {
 
 
     //Get the Results when the component mounts and set the initial state of userList
-    componentDidMount = async () => {
-        await axios.get('http://localhost:5000/api/routes/search').then(resp => {
+    componentDidMount = () => {
+         axios.get('http://localhost:5000/api/routes/search').then(resp => {
             this.setState({userList: resp.data});
         })
             .catch(error => {
