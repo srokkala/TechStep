@@ -16,6 +16,7 @@ export default class HomePage extends Component {
 
     //User has clicked on the Button To Search Page if this function executes
     handleClick = () => {
+        console.log('Clicked');
         this.setState({referrer: '/search'});
     };
 
