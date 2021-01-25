@@ -1,11 +1,12 @@
 import {Button, Card, Col, Layout, Row} from "antd";
 import logo_green from "./logo_green.png";
 import TeamPic from "./TeamPic.png";
-import React,{Component} from "react";
+import React, {Component} from "react";
 import {Redirect} from "react-router-dom";
-const { Header, Content, Footer } = Layout;
 
-export default class HomePage extends Component{
+const {Header, Content, Footer} = Layout;
+
+export default class HomePage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -13,13 +14,15 @@ export default class HomePage extends Component{
         };
     }
 
+    //User has clicked on the Button To Search Page if this function executes
     handleClick = () => {
         this.setState({referrer: '/search'});
     };
 
     render() {
+        //Utilizing React Redirect to send user to Search Page if the button is clicked
         const {referrer} = this.state;
-        if (referrer) return <Redirect to={referrer} />;
+        if (referrer) return <Redirect to={referrer}/>;
         return (
             <Layout style={{backgroundColor: 'white'}}>
                 <Header
